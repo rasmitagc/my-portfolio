@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact — Rasmita</title>
+  <meta name="description" content="Get in touch with Rasmita.">
+  <link rel="icon" type="image/x-icon" href="favicon/favicon.ico">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="wrap">
+      <a href="index.html" class="logo-mark">RASMITA<span>.</span></a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="nav-links">Menu</button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="poetry.html">Poetry</a></li>
+        <li><a href="hobbies.html">Hobbies</a></li>
+        <li><a href="resume.html">Resume</a></li>
+        <li><a href="contact.html" aria-current="page">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero wrap" style="padding-bottom: 1.5rem;">
+      <div class="case-tab">FILE NO. 007 <span class="divider">/</span> OPEN CHANNEL</div>
+      <h1>Get in <em>touch</em></h1>
+      <p class="lede">
+        Open to internships, research collaboration, or just talking security. Send a message below,
+        or reach out directly.
+      </p>
+    </section>
+
+    <section class="section wrap">
+      <!--
+        This form uses Formspree (formspree.io) — a free service that emails form
+        submissions to you without needing a backend server, which works with
+        GitHub Pages since it only serves static files.
+
+        To activate it:
+        1. Create a free account at https://formspree.io
+        2. Create a new form and copy your form endpoint (looks like
+           https://formspree.io/f/xxxxabcd)
+        3. Replace the action="" URL below with your endpoint
+      -->
+      <form class="form-grid reveal" action="https://formspree.io/f/your-form-id" method="POST">
+        <div class="field">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        <div class="field">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="field">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" required></textarea>
+        </div>
+        <div class="field">
+          <button type="submit" class="btn btn-primary">Send message</button>
+        </div>
+      </form>
+
+      <div class="contact-info reveal">
+        <a href="mailto:your.email@example.com">your.email@example.com</a>
+        <a href="https://linkedin.com/in/your-profile" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://github.com/your-username" target="_blank" rel="noopener">GitHub</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <span>&copy; <span id="year"></span> Rasmita. All rights reserved.</span>
+      <span>Built with plain HTML, CSS & JS.</span>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
